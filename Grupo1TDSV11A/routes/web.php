@@ -25,6 +25,13 @@ Route::get('/', [HomeController::class, 'index'])->middleware('auth');
 /* Rutas para cliente */
 
 Route::get('/clientes', [ClienteController::class, 'index'])->middleware('auth');
+Route::get('/clientes/create', [ClienteController::class, 'create'])->middleware('auth');
+Route::post('/clientes/store', [ClienteController::class, 'store'])->middleware('auth');
+Route::get('/clientes/edit/{cliente}', [ClienteController::class, 'edit'])->middleware('auth');
+
+Route::put('/clientes/update/{cliente}', [ClienteController::class, 'update'])->middleware('auth');
+
+Route::delete('/clientes/destroy/{id}', [ClienteController::class, 'destroy'])->middleware('auth');
 
 /* Rutas para pedido */
 

@@ -25,6 +25,14 @@ class HomeController extends Controller
     {
         $data =[
             [
+                'Nombre'=>'Henry Geovanni Chevez Diaz',
+                'Carnet'=> '032522'
+            ],
+            [
+                'Nombre' => 'Leonardo Edenilson Flores Martinez',
+                'Carnet' => '034722'
+            ],
+            [
                 'Nombre'=>'Sital Andrea Galdamez Silva',
                 'Carnet'=> '038922'
             ],

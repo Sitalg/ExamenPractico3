@@ -8,9 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Cliente extends Model
 {
     use HasFactory;
+    public $timestamps = false;
 
             //Nombre de la tabla
-            protected $table = 'pedidos';
+            protected $table = 'clientes';
 
             //Llave primaria de mi tabla
             protected $primaryKey = 'Id_Cliente';

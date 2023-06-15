@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pedido extends Model
 {
     use HasFactory;
+    public $timestamps = false;
         //Nombre de la tabla
         protected $table = 'pedidos';
 
